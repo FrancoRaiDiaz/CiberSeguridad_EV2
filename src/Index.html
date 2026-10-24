@@ -1,281 +1,894 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta
+      name="description"
+      content="DigitalMind es una consultoría especializada en ciberseguridad, ofreciendo servicios de evaluación de vulnerabilidades, auditorías de seguridad y capacitación para proteger tu empresa contra amenazas digitales."
+    />
+    <title>DigitalMind · Consultoría en Ciberseguridad</title>
+    <link rel="stylesheet" href="/_astro/index.B3DsikMu.css" />
 
-<!DOCTYPE html><html lang="es" class="scroll-smooth"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.png"><meta name="description" content="DigitalMind es una consultoría especializada en ciberseguridad, ofreciendo servicios de evaluación de vulnerabilidades, auditorías de seguridad y capacitación para proteger tu empresa contra amenazas digitales."><title>DigitalMind · Consultoría en Ciberseguridad</title><link rel="stylesheet" href="/_astro/index.B3DsikMu.css"></head> <body class="bg-dmBg m-0 p-0 min-h-screen">  <header class="sticky top-0 z-30 bg-dmBg/90 backdrop-blur border-nav"> <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4 relative z-10"> <a href="#inicio" class="flex items-center gap-3"> <div class="flex h-12 w-12 p-1 items-center justify-center rounded-lg bg-dmAccent/10 ring-1 ring-dmAccent/40"> <img src="/logo.svg" alt="Logo de DigitalMind"> </div> <div class="flex flex-col leading-tight"> <span class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-300">
-DigitalMind
-</span> <span class="text-xs text-slate-400">Consultoría en Ciberseguridad</span> </div> </a> <nav class="hidden items-center gap-8 text-sm font-medium md:flex"> <a href="#servicios" class="text-slate-300 hover:text-dmAccent">Servicios</a> <a href="#porque" class="text-slate-300 hover:text-dmAccent">Por qué DigitalMind</a> <a href="#contacto" class="text-slate-300 hover:text-dmAccent">Contacto</a> </nav> <div class="hidden md:block"> <a href="#contacto" class="rounded-full bg-dmAccent px-4 py-2 text-xs font-semibold uppercase tracking-widest text-dmPrimary shadow-lg shadow-dmAccent/30 hover:bg-emerald-400">
-Solicitar diagnóstico
-</a> </div> <button id="nav-toggle-btn" class="inline-flex items-center justify-center rounded-md p-2 text-slate-300 hover:bg-slate-800 md:hidden" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-mobile"> <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path id="nav-toggle-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4 6h16M4 12h16m-7 6h7"></path> </svg> </button> </div> <nav id="nav-mobile" class="hidden fixed inset-x-0 top-[72px] z-50 border-t border-slate-800/40 bg-dmBg/95 backdrop-blur md:hidden h-[calc(100vh-72px)] overflow-y-auto"> <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 pb-4 pt-3 text-sm font-medium"> <a href="#servicios" class="rounded-md px-2 py-2 text-slate-200 hover:bg-slate-800 hover:text-dmAccent">Servicios</a> <a href="#porque" class="rounded-md px-2 py-2 text-slate-200 hover:bg-slate-800 hover:text-dmAccent">Por qué DigitalMind</a> <a href="#contacto" class="rounded-md px-2 py-2 text-slate-200 hover:bg-slate-800 hover:text-dmAccent">Contacto</a> <a href="#contacto" class="mt-2 rounded-full bg-dmAccent px-4 py-2 text-center text-xs font-semibold uppercase tracking-widest text-dmPrimary shadow-lg shadow-dmAccent/30 hover:bg-emerald-400">
-Solicitar diagnóstico
-</a> </div> </nav> <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const btn = document.getElementById("nav-toggle-btn");
-      const menu = document.getElementById("nav-mobile");
-      const icon = document.getElementById("nav-toggle-icon");
+    <!-- Políticas de Seguridad Inyectadas (Estado B) -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:;"
+    />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-store, no-cache, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="csrf-token" content="e4d909c290d0fb1ca068ffaddf22cbd0" />
+  </head>
+  <body class="bg-dmBg m-0 p-0 min-h-screen">
+    <header class="sticky top-0 z-30 bg-dmBg/90 backdrop-blur border-nav">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4 relative z-10"
+      >
+        <a href="#inicio" class="flex items-center gap-3">
+          <div
+            class="flex h-12 w-12 p-1 items-center justify-center rounded-lg bg-dmAccent/10 ring-1 ring-dmAccent/40"
+          >
+            <img src="/logo.svg" alt="Logo de DigitalMind" />
+          </div>
+          <div class="flex flex-col leading-tight">
+            <span
+              class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-300"
+              >DigitalMind</span
+            >
+            <span class="text-xs text-slate-400"
+              >Consultoría en Ciberseguridad</span
+            >
+          </div>
+        </a>
+        <nav class="hidden items-center gap-8 text-sm font-medium md:flex">
+          <a href="#servicios" class="text-slate-300 hover:text-dmAccent"
+            >Servicios</a
+          >
+          <a href="#porque" class="text-slate-300 hover:text-dmAccent"
+            >Por qué DigitalMind</a
+          >
+          <a href="#contacto" class="text-slate-300 hover:text-dmAccent"
+            >Contacto</a
+          >
+        </nav>
+        <div class="hidden md:block">
+          <a
+            href="#contacto"
+            class="rounded-full bg-dmAccent px-4 py-2 text-xs font-semibold uppercase tracking-widest text-dmPrimary shadow-lg shadow-dmAccent/30 hover:bg-emerald-400"
+            >Solicitar diagnóstico</a
+          >
+        </div>
+        <button
+          id="nav-toggle-btn"
+          class="inline-flex items-center justify-center rounded-md p-2 text-slate-300 hover:bg-slate-800 md:hidden"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="nav-mobile"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              id="nav-toggle-icon"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.7"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <nav
+        id="nav-mobile"
+        class="hidden fixed inset-x-0 top-[72px] z-50 border-t border-slate-800/40 bg-dmBg/95 backdrop-blur md:hidden h-[calc(100vh-72px)] overflow-y-auto"
+      >
+        <div
+          class="mx-auto flex max-w-6xl flex-col gap-2 px-4 pb-4 pt-3 text-sm font-medium"
+        >
+          <a
+            href="#servicios"
+            class="rounded-md px-2 py-2 text-slate-200 hover:bg-slate-800 hover:text-dmAccent"
+            >Servicios</a
+          >
+          <a
+            href="#porque"
+            class="rounded-md px-2 py-2 text-slate-200 hover:bg-slate-800 hover:text-dmAccent"
+            >Por qué DigitalMind</a
+          >
+          <a
+            href="#contacto"
+            class="rounded-md px-2 py-2 text-slate-200 hover:bg-slate-800 hover:text-dmAccent"
+            >Contacto</a
+          >
+          <a
+            href="#contacto"
+            class="mt-2 rounded-full bg-dmAccent px-4 py-2 text-center text-xs font-semibold uppercase tracking-widest text-dmPrimary shadow-lg shadow-dmAccent/30 hover:bg-emerald-400"
+            >Solicitar diagnóstico</a
+          >
+        </div>
+      </nav>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const btn = document.getElementById("nav-toggle-btn");
+          const menu = document.getElementById("nav-mobile");
+          const icon = document.getElementById("nav-toggle-icon");
 
-      if (btn && menu && icon) {
-        const HAMB = "M4 6h16M4 12h16m-7 6h7";
-        const CLOSE = "M6 18L18 6M6 6l12 12";
+          if (btn && menu && icon) {
+            const HAMB = "M4 6h16M4 12h16m-7 6h7";
+            const CLOSE = "M6 18L18 6M6 6l12 12";
 
-        const toggleMenu = () => {
-          const isHidden = menu.classList.contains("hidden");
-          if (isHidden) {
-            menu.classList.remove("hidden");
-            btn.setAttribute("aria-expanded", "true");
-            icon.setAttribute("d", CLOSE);
-            document.body.style.overflow = "hidden";
-          } else {
-            menu.classList.add("hidden");
-            btn.setAttribute("aria-expanded", "false");
-            icon.setAttribute("d", HAMB);
-            document.body.style.overflow = "";
+            const toggleMenu = () => {
+              const isHidden = menu.classList.contains("hidden");
+              if (isHidden) {
+                menu.classList.remove("hidden");
+                btn.setAttribute("aria-expanded", "true");
+                icon.setAttribute("d", CLOSE);
+                document.body.style.overflow = "hidden";
+              } else {
+                menu.classList.add("hidden");
+                btn.setAttribute("aria-expanded", "false");
+                icon.setAttribute("d", HAMB);
+                document.body.style.overflow = "";
+              }
+            };
+
+            btn.addEventListener("click", (e) => {
+              e.stopPropagation();
+              toggleMenu();
+            });
+
+            menu.addEventListener("click", (e) => {
+              if (e.target.closest("a")) {
+                menu.classList.add("hidden");
+                btn.setAttribute("aria-expanded", "false");
+                icon.setAttribute("d", HAMB);
+                document.body.style.overflow = "";
+              }
+            });
+
+            window.addEventListener("resize", () => {
+              if (
+                window.innerWidth >= 768 &&
+                !menu.classList.contains("hidden")
+              ) {
+                menu.classList.add("hidden");
+                btn.setAttribute("aria-expanded", "false");
+                icon.setAttribute("d", HAMB);
+                document.body.style.overflow = "";
+              }
+            });
           }
-        };
-
-        btn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          toggleMenu();
         });
+      </script>
+    </header>
 
-        menu.addEventListener("click", (e) => {
-          if (e.target.closest("a")) {
-            menu.classList.add("hidden");
-            btn.setAttribute("aria-expanded", "false");
-            icon.setAttribute("d", HAMB);
-            document.body.style.overflow = "";
-          }
-        });
+    <section id="inicio" class="relative overflow-hidden border-animado">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-12 px-4 pb-16 pt-12 md:flex-row md:items-center md:pb-24 md:pt-12"
+      >
+        <div class="relative z-10 flex-1 space-y-6">
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-300"
+            >Ciberseguridad estratégica · CISO Virtual</span
+          >
+          <h1
+            class="text-3xl font-semibold leading-tight text-slate-50 sm:text-4xl lg:text-5xl"
+          >
+            Ciberseguridad real, práctica y
+            <span class="text-emerald-400">alineada al negocio</span>.
+          </h1>
+          <p class="max-w-xl text-sm text-slate-300 sm:text-base">
+            DigitalMind ayuda a organizaciones sin un CISO interno a
+            <span class="font-semibold text-slate-100"
+              >identificar sus brechas</span
+            >,
+            <span class="font-semibold text-slate-100"
+              >reducir riesgos reales</span
+            >
+            y
+            <span class="font-semibold text-slate-100"
+              >cumplir exigencias normativas</span
+            >, sin tecnicismos innecesarios.
+          </p>
+          <div class="grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
+            <div class="flex items-start gap-3">
+              <span
+                class="mt-0.5 inline-flex h-5 w-6 items-center justify-center rounded-full bg-emerald-500/10 text-[11px] text-emerald-400 ring-1 ring-emerald-500/40"
+                >✓</span
+              >
+              <p>Diagnóstico rápido para saber dónde estás parado.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span
+                class="mt-0.5 inline-flex h-5 w-6 items-center justify-center rounded-full bg-emerald-500/10 text-[11px] text-emerald-400 ring-1 ring-emerald-500/40"
+                >✓</span
+              >
+              <p>Planes de acción claros para TI y gerencia.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span
+                class="mt-0.5 inline-flex h-5 w-6 items-center justify-center rounded-full bg-emerald-500/10 text-[11px] text-emerald-400 ring-1 ring-emerald-500/40"
+                >✓</span
+              >
+              <p>Pentesting, phishing ético y programas de cultura.</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span
+                class="mt-0.5 inline-flex h-5 w-6 items-center justify-center rounded-full bg-emerald-500/10 text-[11px] text-emerald-400 ring-1 ring-emerald-500/40"
+                >✓</span
+              >
+              <p>CISO Virtual: dirección de seguridad continua.</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a
+              href="#contacto"
+              class="inline-flex items-center justify-center rounded-full bg-dmAccent px-6 py-2.5 text-sm font-semibold text-dmPrimary shadow-lg shadow-dmAccent/30 hover:bg-emerald-400"
+              >Solicitar Diagnóstico Flash</a
+            >
+            <a
+              href="#servicios"
+              class="inline-flex items-center justify-center rounded-full border border-slate-600 px-5 py-2 text-sm font-medium text-slate-100 hover:border-emerald-500/60 hover:text-emerald-300"
+              >Ver servicios</a
+            >
+          </div>
+          <p class="pt-3 text-xs text-slate-400">
+            Trabajamos con fundaciones, pymes y organizaciones de servicios que
+            necesitan seguridad real, no solo papeles.
+          </p>
+        </div>
+        <div class="relative flex-1">
+          <div
+            class="pointer-events-none absolute -right-10 -top-10 h-72 w-72 rounded-full bg-emerald-500/10 blur-3xl"
+          ></div>
+          <div
+            class="pointer-events-none absolute bottom-0 left-0 h-40 w-40 rounded-full bg-cyan-500/10 blur-3xl"
+          ></div>
+          <div
+            class="relative mx-auto max-w-md rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-2xl shadow-emerald-500/10"
+          >
+            <div class="mb-4 flex items-center justify-between">
+              <p
+                class="text-xs font-medium uppercase tracking-[0.18em] text-slate-400"
+              >
+                Panorama actual
+              </p>
+              <span
+                class="inline-flex items-center gap-1 rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold text-emerald-300 ring-1 ring-emerald-500/40"
+                >- Riesgo Alto</span
+              >
+            </div>
+            <p class="text-sm text-slate-100">
+              ¿Sabes realmente cuántas brechas de seguridad tiene tu
+              organización? Un ataque de ransomware o robo de credenciales puede
+              detener la operación completa.
+            </p>
+            <p class="mt-3 text-xs text-slate-400">
+              Te ayudamos a medir tu riesgo, priorizar acciones y construir un
+              roadmap realista de seguridad.
+            </p>
+            <div class="mt-4 grid grid-cols-3 gap-3 text-center text-xs">
+              <div class="rounded-xl bg-slate-900/80 p-2">
+                <p class="text-[11px] uppercase tracking-wide text-slate-400">
+                  Fase 1
+                </p>
+                <p class="text-sm font-semibold text-emerald-300">
+                  Diagnóstico
+                </p>
+              </div>
+              <div class="rounded-xl bg-slate-900/80 p-2">
+                <p class="text-[11px] uppercase tracking-wide text-slate-400">
+                  Fase 2
+                </p>
+                <p
+                  class="text-sm font-semibold text-emerald-300 break-all hyphens-auto"
+                >
+                  Implementación
+                </p>
+              </div>
+              <div class="rounded-xl bg-slate-900/80 p-2">
+                <p class="text-[11px] uppercase tracking-wide text-slate-400">
+                  Fase 3
+                </p>
+                <p class="text-sm font-semibold text-emerald-300">
+                  CISO Virtual
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        window.addEventListener("resize", () => {
-          if (window.innerWidth >= 768 && !menu.classList.contains("hidden")) {
-            menu.classList.add("hidden");
-            btn.setAttribute("aria-expanded", "false");
-            icon.setAttribute("d", HAMB);
-            document.body.style.overflow = "";
-          }
-        });
-      }
-    });
-  </script> </header> <section id="inicio" class="relative overflow-hidden border-animado"> <div class="mx-auto flex max-w-6xl flex-col gap-12 px-4 pb-16 pt-12 md:flex-row md:items-center md:pb-24 md:pt-12"> <!-- Texto principal --> <div class="relative z-10 flex-1 space-y-6"> <span class="inline-flex items-center gap-2 rounded-full border border-emerald-500/40 bg-emerald-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-300">
-Ciberseguridad estratégica · CISO Virtual
-</span> <h1 class="text-3xl font-semibold leading-tight text-slate-50 sm:text-4xl lg:text-5xl">
-Ciberseguridad real, práctica y
-<span class="text-emerald-400">alineada al negocio</span>.
-</h1> <p class="max-w-xl text-sm text-slate-300 sm:text-base">
-DigitalMind ayuda a organizaciones sin un CISO interno a
-<span class="font-semibold text-slate-100">identificar sus brechas</span>,
-<span class="font-semibold text-slate-100">reducir riesgos reales</span>
-y
-<span class="font-semibold text-slate-100">cumplir exigencias normativas</span>, sin tecnicismos innecesarios.
-</p> <!-- Bullets de valor --> <div class="grid gap-3 text-sm text-slate-300 sm:grid-cols-2"> <div class="flex items-start gap-3"> <span class="mt-0.5 inline-flex h-5 w-6 items-center justify-center rounded-full bg-emerald-500/10 text-[11px] text-emerald-400 ring-1 ring-emerald-500/40">
-✓
-</span> <p>Diagnóstico rápido para saber dónde estás parado.</p> </div> <div class="flex items-start gap-3"> <span class="mt-0.5 inline-flex h-5 w-6 items-center justify-center rounded-full bg-emerald-500/10 text-[11px] text-emerald-400 ring-1 ring-emerald-500/40">
-✓
-</span> <p>Planes de acción claros para TI y gerencia.</p> </div> <div class="flex items-start gap-3"> <span class="mt-0.5 inline-flex h-5 w-6 items-center justify-center rounded-full bg-emerald-500/10 text-[11px] text-emerald-400 ring-1 ring-emerald-500/40">
-✓
-</span> <p>Pentesting, phishing ético y programas de cultura.</p> </div> <div class="flex items-start gap-3"> <span class="mt-0.5 inline-flex h-5 w-6 items-center justify-center rounded-full bg-emerald-500/10 text-[11px] text-emerald-400 ring-1 ring-emerald-500/40">
-✓
-</span> <p>CISO Virtual: dirección de seguridad continua.</p> </div> </div> <!-- CTA --> <div class="flex flex-wrap items-center gap-4 pt-2"> <a href="#contacto" class="inline-flex items-center justify-center rounded-full bg-dmAccent px-6 py-2.5 text-sm font-semibold text-dmPrimary shadow-lg shadow-dmAccent/30 hover:bg-emerald-400">
-Solicitar Diagnóstico Flash
-</a> <a href="#servicios" class="inline-flex items-center justify-center rounded-full border border-slate-600 px-5 py-2 text-sm font-medium text-slate-100 hover:border-emerald-500/60 hover:text-emerald-300">
-Ver servicios
-</a> </div> <!-- Confianza --> <p class="pt-3 text-xs text-slate-400">
-Trabajamos con fundaciones, pymes y organizaciones de servicios que
-        necesitan seguridad real, no solo papeles.
-</p> </div> <!-- “Card” lateral / visual --> <div class="relative flex-1"> <div class="pointer-events-none absolute -right-10 -top-10 h-72 w-72 rounded-full bg-emerald-500/10 blur-3xl"></div> <div class="pointer-events-none absolute bottom-0 left-0 h-40 w-40 rounded-full bg-cyan-500/10 blur-3xl"></div> <div class="relative mx-auto max-w-md rounded-2xl border border-slate-800 bg-slate-900/60 p-5 shadow-2xl shadow-emerald-500/10"> <div class="mb-4 flex items-center justify-between"> <p class="text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
-Panorama actual
-</p> <span class="inline-flex items-center gap-1 rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold text-emerald-300 ring-1 ring-emerald-500/40">
-• Riesgo Alto
-</span> </div> <p class="text-sm text-slate-100">
-¿Sabes realmente cuántas brechas de seguridad tiene tu organización?
-          Un ataque de ransomware o robo de credenciales puede detener la
-          operación completa.
-</p> <p class="mt-3 text-xs text-slate-400">
-Te ayudamos a medir tu riesgo, priorizar acciones y construir un
-          roadmap realista de seguridad.
-</p> <div class="mt-4 grid grid-cols-3 gap-3 text-center text-xs"> <div class="rounded-xl bg-slate-900/80 p-2"> <p class="text-[11px] uppercase tracking-wide text-slate-400">
-Fase 1
-</p> <p class="text-sm font-semibold text-emerald-300">Diagnóstico</p> </div> <div class="rounded-xl bg-slate-900/80 p-2"> <p class="text-[11px] uppercase tracking-wide text-slate-400">
-Fase 2
-</p> <p class="text-sm font-semibold text-emerald-300 break-all hyphens-auto">
-Implementación
-</p> </div> <div class="rounded-xl bg-slate-900/80 p-2"> <p class="text-[11px] uppercase tracking-wide text-slate-400">
-Fase 3
-</p> <p class="text-sm font-semibold text-emerald-300">CISO Virtual</p> </div> </div> </div> </div> </div> </section> <section id="servicios" class="relative overflow-hidden border-animado"> <div class="mx-auto max-w-6xl px-4 py-14 md:py-18"> <div class="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between"> <div> <h2 class="text-xl font-semibold text-slate-50 sm:text-2xl">
-Servicios de ciberseguridad que sí generan resultados
-</h2> <p class="mt-2 max-w-2xl text-sm text-slate-300">
-Desde diagnósticos rápidos hasta dirección estratégica continua,
-          diseñamos cada servicio para entregar valor real a TI y a la gerencia.
-</p> </div> <p class="text-xs text-slate-400">
-Partimos con un diagnóstico claro y crecemos hacia un modelo de CISO
-        Virtual.
-</p> </div> <!-- Vista mobile: dos carouseles de 3 servicios --> <div class="space-y-8 md:hidden"> <!-- Carrusel 1: servicios 1–3 --> <div class="space-y-3"> <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
-Diagnóstico, Pentest y Phishing
-</h3> <div class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 [-webkit-overflow-scrolling:touch]"> <article class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">
-Diagnóstico Flash de Ciberseguridad 360°
-</h3> <p class="mt-2 text-sm text-slate-300">
-Radiografía completa del estado actual de tu seguridad en 1–2
+    <section id="servicios" class="relative overflow-hidden border-animado">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:py-18">
+        <div
+          class="mb-8 flex flex-col gap-3 md:flex-row md:items-end md:justify-between"
+        >
+          <div>
+            <h2 class="text-xl font-semibold text-slate-50 sm:text-2xl">
+              Servicios de ciberseguridad que sí generan resultados
+            </h2>
+            <p class="mt-2 max-w-2xl text-sm text-slate-300">
+              Desde diagnósticos rápidos hasta dirección estratégica continua,
+              diseñamos cada servicio para entregar valor real a TI y a la
+              gerencia.
+            </p>
+          </div>
+          <p class="text-xs text-slate-400">
+            Partimos con un diagnóstico claro y crecemos hacia un modelo de CISO
+            Virtual.
+          </p>
+        </div>
+
+        <!-- Vista mobile -->
+        <div class="space-y-8 md:hidden">
+          <div class="space-y-3">
+            <h3
+              class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400"
+            >
+              Diagnóstico, Pentest y Phishing
+            </h3>
+            <div
+              class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 [-webkit-overflow-scrolling:touch]"
+            >
+              <article
+                class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+              >
+                <h3 class="text-sm font-semibold text-slate-50">
+                  Diagnóstico Flash de Ciberseguridad 360°
+                </h3>
+                <p class="mt-2 text-sm text-slate-300">
+                  Radiografía completa del estado actual de tu seguridad en 1–2
+                  semanas, con una matriz de riesgos y un plan de acción
+                  concreto para 90 días.
+                </p>
+                <ul class="mt-3 space-y-1 text-xs text-slate-300">
+                  <li>Revisión de accesos, MFA, correo y nube básica.</li>
+                  <li>Entrevista con TI y gerencia.</li>
+                  <li>Informe ejecutivo + sesión de presentación.</li>
+                </ul>
+                <p class="mt-4 text-xs font-semibold text-emerald-300">
+                  Ideal para: primera aproximación y toma de decisiones.
+                </p>
+              </article>
+              <article
+                class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+              >
+                <h3 class="text-sm font-semibold text-slate-50">
+                  Pentest de Aplicaciones Web & APIs (OWASP)
+                </h3>
+                <p class="mt-2 text-sm text-slate-300">
+                  Pruebas de intrusión controladas sobre tus portales y APIs
+                  para detectar vulnerabilidades explotables antes que un
+                  atacante.
+                </p>
+                <ul class="mt-3 space-y-1 text-xs text-slate-300">
+                  <li>Enfoque OWASP Top 10 y más.</li>
+                  <li>Informe técnico + ejecutivo.</li>
+                  <li>Reunión con el equipo de desarrollo.</li>
+                  <li>Re-test opcional tras remediaciones.</li>
+                </ul>
+                <p class="mt-4 text-xs font-semibold text-emerald-300">
+                  Ideal para: sistemas críticos, portales de clientes y SaaS.
+                </p>
+              </article>
+              <article
+                class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+              >
+                <h3 class="text-sm font-semibold text-slate-50">
+                  Simulación de Phishing & Taller de Concientización
+                </h3>
+                <p class="mt-2 text-sm text-slate-300">
+                  Ponemos a prueba el factor humano con campañas de phishing
+                  ético y un taller práctico para mejorar la cultura de
+                  seguridad.
+                </p>
+                <ul class="mt-3 space-y-1 text-xs text-slate-300">
+                  <li>Campañas personalizadas y métricas detalladas.</li>
+                  <li>Taller online o presencial.</li>
+                  <li>Material de apoyo y ciberconsejos.</li>
+                </ul>
+                <p class="mt-4 text-xs font-semibold text-emerald-300">
+                  Ideal para: organizaciones en proceso de cambio cultural.
+                </p>
+              </article>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <h3
+              class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400"
+            >
+              Gobierno, vCISO y Cultura
+            </h3>
+            <div
+              class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 [-webkit-overflow-scrolling:touch]"
+            >
+              <article
+                class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+              >
+                <h3 class="text-sm font-semibold text-slate-50">
+                  Assessment Integral de Seguridad & Cumplimiento
+                </h3>
+                <p class="mt-2 text-sm text-slate-300">
+                  Evaluación de madurez en seguridad basada en ISO 27001, NIST,
+                  COBIT y regulaciones nacionales, con enfoque en brechas y
+                  roadmap.
+                </p>
+                <ul class="mt-3 space-y-1 text-xs text-slate-300">
+                  <li>Entrevistas con áreas clave.</li>
+                  <li>Revisión documental y técnica.</li>
+                  <li>Mapa de brechas + roadmap 12–24 meses.</li>
+                </ul>
+                <p class="mt-4 text-xs font-semibold text-emerald-300">
+                  Ideal para: organizaciones que quieren ordenarse de verdad.
+                </p>
+              </article>
+              <article
+                class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+              >
+                <h3 class="text-sm font-semibold text-slate-50">
+                  CISO Virtual (vCISO)
+                </h3>
+                <p class="mt-2 text-sm text-slate-300">
+                  Dirección estratégica de ciberseguridad continua sin contratar
+                  un CISO full-time. Ideal para medianas empresas y fundaciones.
+                </p>
+                <ul class="mt-3 space-y-1 text-xs text-slate-300">
+                  <li>Comité de seguridad mensual o bimensual.</li>
+                  <li>Roadmap vivo y priorización de proyectos.</li>
+                  <li>Acompañamiento en incidentes y auditorías.</li>
+                </ul>
+                <p class="mt-4 text-xs font-semibold text-emerald-300">
+                  Ideal para: organizaciones sin equipo interno de seguridad.
+                </p>
+              </article>
+              <article
+                class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+              >
+                <h3 class="text-sm font-semibold text-slate-50">
+                  Programas de Concientización y Cultura DigitalMind
+                </h3>
+                <p class="mt-2 text-sm text-slate-300">
+                  Diseño de planes anuales de sensibilización, cápsulas
+                  formativas y materiales para que la seguridad se vuelva parte
+                  del día a día.
+                </p>
+                <ul class="mt-3 space-y-1 text-xs text-slate-300">
+                  <li>Plan anual de contenidos.</li>
+                  <li>Cápsulas, charlas y campañas.</li>
+                  <li>Métricas y seguimiento de participación.</li>
+                </ul>
+                <p class="mt-4 text-xs font-semibold text-emerald-300">
+                  Ideal para: organizaciones que quieren sostener el cambio.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vista desktop -->
+        <div class="hidden gap-6 md:grid md:grid-cols-2 lg:grid-cols-3">
+          <article
+            class="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <h3 class="text-sm font-semibold text-slate-50">
+              Diagnóstico Flash de Ciberseguridad 360°
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Radiografía completa del estado actual de tu seguridad en 1–2
               semanas, con una matriz de riesgos y un plan de acción concreto
               para 90 días.
-</p> <ul class="mt-3 space-y-1 text-xs text-slate-300"> <li>• Revisión de accesos, MFA, correo y nube básica.</li> <li>• Entrevista con TI y gerencia.</li> <li>• Informe ejecutivo + sesión de presentación.</li> </ul> <p class="mt-4 text-xs font-semibold text-emerald-300">
-Ideal para: primera aproximación y toma de decisiones.
-</p> </article> <article class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">
-Pentest de Aplicaciones Web & APIs (OWASP)
-</h3> <p class="mt-2 text-sm text-slate-300">
-Pruebas de intrusión controladas sobre tus portales y APIs para
+            </p>
+            <ul class="mt-3 space-y-1 text-xs text-slate-300">
+              <li>Revisión de accesos, MFA, correo y nube básica.</li>
+              <li>Entrevista con TI y gerencia.</li>
+              <li>Informe ejecutivo + sesión de presentación.</li>
+            </ul>
+            <p class="mt-4 text-xs font-semibold text-emerald-300">
+              Ideal para: primera aproximación y toma de decisiones.
+            </p>
+          </article>
+          <article
+            class="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <h3 class="text-sm font-semibold text-slate-50">
+              Pentest de Aplicaciones Web & APIs (OWASP)
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Pruebas de intrusión controladas sobre tus portales y APIs para
               detectar vulnerabilidades explotables antes que un atacante.
-</p> <ul class="mt-3 space-y-1 text-xs text-slate-300"> <li>• Enfoque OWASP Top 10 y más.</li> <li>• Informe técnico + ejecutivo.</li> <li>• Reunión con el equipo de desarrollo.</li> <li>• Re-test opcional tras remediaciones.</li> </ul> <p class="mt-4 text-xs font-semibold text-emerald-300">
-Ideal para: sistemas críticos, portales de clientes y SaaS.
-</p> </article> <article class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">
-Simulación de Phishing & Taller de Concientización
-</h3> <p class="mt-2 text-sm text-slate-300">
-Ponemos a prueba el factor humano con campañas de phishing ético y
+            </p>
+            <ul class="mt-3 space-y-1 text-xs text-slate-300">
+              <li>Enfoque OWASP Top 10 y más.</li>
+              <li>Informe técnico + ejecutivo.</li>
+              <li>Reunión con el equipo de desarrollo.</li>
+              <li>Re-test opcional tras remediaciones.</li>
+            </ul>
+            <p class="mt-4 text-xs font-semibold text-emerald-300">
+              Ideal para: sistemas críticos, portales de clientes y SaaS.
+            </p>
+          </article>
+          <article
+            class="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <h3 class="text-sm font-semibold text-slate-50">
+              Simulación de Phishing & Taller de Concientización
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Ponemos a prueba el factor humano con campañas de phishing ético y
               un taller práctico para mejorar la cultura de seguridad.
-</p> <ul class="mt-3 space-y-1 text-xs text-slate-300"> <li>• Campañas personalizadas y métricas detalladas.</li> <li>• Taller online o presencial.</li> <li>• Material de apoyo y ciberconsejos.</li> </ul> <p class="mt-4 text-xs font-semibold text-emerald-300">
-Ideal para: organizaciones en proceso de cambio cultural.
-</p> </article> </div> </div> <!-- Carrusel 2: servicios 4–6 --> <div class="space-y-3"> <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
-Gobierno, vCISO y Cultura
-</h3> <div class="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 [-webkit-overflow-scrolling:touch]"> <article class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">
-Assessment Integral de Seguridad & Cumplimiento
-</h3> <p class="mt-2 text-sm text-slate-300">
-Evaluación de madurez en seguridad basada en ISO 27001, NIST,
+            </p>
+            <ul class="mt-3 space-y-1 text-xs text-slate-300">
+              <li>Campañas personalizadas y métricas detalladas.</li>
+              <li>Taller online o presencial.</li>
+              <li>Material de apoyo y ciberconsejos.</li>
+            </ul>
+            <p class="mt-4 text-xs font-semibold text-emerald-300">
+              Ideal para: organizaciones en proceso de cambio cultural.
+            </p>
+          </article>
+          <article
+            class="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <h3 class="text-sm font-semibold text-slate-50">
+              Assessment Integral de Seguridad & Cumplimiento
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Evaluación de madurez en seguridad basada en ISO 27001, NIST,
               COBIT y regulaciones nacionales, con enfoque en brechas y roadmap.
-</p> <ul class="mt-3 space-y-1 text-xs text-slate-300"> <li>• Entrevistas con áreas clave.</li> <li>• Revisión documental y técnica.</li> <li>• Mapa de brechas + roadmap 12–24 meses.</li> </ul> <p class="mt-4 text-xs font-semibold text-emerald-300">
-Ideal para: organizaciones que quieren ordenarse de verdad.
-</p> </article> <article class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">
-CISO Virtual (vCISO)
-</h3> <p class="mt-2 text-sm text-slate-300">
-Dirección estratégica de ciberseguridad continua sin contratar un
+            </p>
+            <ul class="mt-3 space-y-1 text-xs text-slate-300">
+              <li>Entrevistas con áreas clave.</li>
+              <li>Revisión documental y técnica.</li>
+              <li>Mapa de brechas + roadmap 12–24 meses.</li>
+            </ul>
+            <p class="mt-4 text-xs font-semibold text-emerald-300">
+              Ideal para: organizaciones que quieren ordenarse de verdad.
+            </p>
+          </article>
+          <article
+            class="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <h3 class="text-sm font-semibold text-slate-50">
+              CISO Virtual (vCISO)
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Dirección estratégica de ciberseguridad continua sin contratar un
               CISO full-time. Ideal para medianas empresas y fundaciones.
-</p> <ul class="mt-3 space-y-1 text-xs text-slate-300"> <li>• Comité de seguridad mensual o bimensual.</li> <li>• Roadmap vivo y priorización de proyectos.</li> <li>• Acompañamiento en incidentes y auditorías.</li> </ul> <p class="mt-4 text-xs font-semibold text-emerald-300">
-Ideal para: organizaciones sin equipo interno de seguridad.
-</p> </article> <article class="flex min-w-[85%] snap-center flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">
-Programas de Concientización y Cultura DigitalMind
-</h3> <p class="mt-2 text-sm text-slate-300">
-Diseño de planes anuales de sensibilización, cápsulas formativas y
+            </p>
+            <ul class="mt-3 space-y-1 text-xs text-slate-300">
+              <li>Comité de seguridad mensual o bimensual.</li>
+              <li>Roadmap vivo y priorización de proyectos.</li>
+              <li>Acompañamiento en incidentes y auditorías.</li>
+            </ul>
+            <p class="mt-4 text-xs font-semibold text-emerald-300">
+              Ideal para: organizaciones sin equipo interno de seguridad.
+            </p>
+          </article>
+          <article
+            class="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"
+          >
+            <h3 class="text-sm font-semibold text-slate-50">
+              Programas de Concientización y Cultura DigitalMind
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Diseño de planes anuales de sensibilización, cápsulas formativas y
               materiales para que la seguridad se vuelva parte del día a día.
-</p> <ul class="mt-3 space-y-1 text-xs text-slate-300"> <li>• Plan anual de contenidos.</li> <li>• Cápsulas, charlas y campañas.</li> <li>• Métricas y seguimiento de participación.</li> </ul> <p class="mt-4 text-xs font-semibold text-emerald-300">
-Ideal para: organizaciones que quieren sostener el cambio.
-</p> </article> </div> </div> </div> <!-- Vista desktop/tablet: grilla original --> <div class="hidden gap-6 md:grid md:grid-cols-2 lg:grid-cols-3"> <!-- Servicio 1 --> <article class="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">
-Diagnóstico Flash de Ciberseguridad 360°
-</h3> <p class="mt-2 text-sm text-slate-300">
-Radiografía completa del estado actual de tu seguridad en 1–2 semanas,
-          con una matriz de riesgos y un plan de acción concreto para 90 días.
-</p> <ul class="mt-3 space-y-1 text-xs text-slate-300"> <li>• Revisión de accesos, MFA, correo y nube básica.</li> <li>• Entrevista con TI y gerencia.</li> <li>• Informe ejecutivo + sesión de presentación.</li> </ul> <p class="mt-4 text-xs font-semibold text-emerald-300">
-Ideal para: primera aproximación y toma de decisiones.
-</p> </article> <!-- Servicio 2 --> <article class="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">
-Pentest de Aplicaciones Web & APIs (OWASP)
-</h3> <p class="mt-2 text-sm text-slate-300">
-Pruebas de intrusión controladas sobre tus portales y APIs para
-          detectar vulnerabilidades explotables antes que un atacante.
-</p> <ul class="mt-3 space-y-1 text-xs text-slate-300"> <li>• Enfoque OWASP Top 10 y más.</li> <li>• Informe técnico + ejecutivo.</li> <li>• Reunión con el equipo de desarrollo.</li> <li>• Re-test opcional tras remediaciones.</li> </ul> <p class="mt-4 text-xs font-semibold text-emerald-300">
-Ideal para: sistemas críticos, portales de clientes y SaaS.
-</p> </article> <!-- Servicio 3 --> <article class="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">
-Simulación de Phishing & Taller de Concientización
-</h3> <p class="mt-2 text-sm text-slate-300">
-Ponemos a prueba el factor humano con campañas de phishing ético y un
-          taller práctico para mejorar la cultura de seguridad.
-</p> <ul class="mt-3 space-y-1 text-xs text-slate-300"> <li>• Campañas personalizadas y métricas detalladas.</li> <li>• Taller online o presencial.</li> <li>• Material de apoyo y ciberconsejos.</li> </ul> <p class="mt-4 text-xs font-semibold text-emerald-300">
-Ideal para: organizaciones en proceso de cambio cultural.
-</p> </article> <!-- Servicio 4 --> <article class="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">
-Assessment Integral de Seguridad & Cumplimiento
-</h3> <p class="mt-2 text-sm text-slate-300">
-Evaluación de madurez en seguridad basada en ISO 27001, NIST, COBIT y
-          regulaciones nacionales, con enfoque en brechas y roadmap.
-</p> <ul class="mt-3 space-y-1 text-xs text-slate-300"> <li>• Entrevistas con áreas clave.</li> <li>• Revisión documental y técnica.</li> <li>• Mapa de brechas + roadmap 12–24 meses.</li> </ul> <p class="mt-4 text-xs font-semibold text-emerald-300">
-Ideal para: organizaciones que quieren ordenarse de verdad.
-</p> </article> <!-- Servicio 5 --> <article class="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">
-CISO Virtual (vCISO)
-</h3> <p class="mt-2 text-sm text-slate-300">
-Dirección estratégica de ciberseguridad continua sin contratar un CISO
-          full-time. Ideal para medianas empresas y fundaciones.
-</p> <ul class="mt-3 space-y-1 text-xs text-slate-300"> <li>• Comité de seguridad mensual o bimensual.</li> <li>• Roadmap vivo y priorización de proyectos.</li> <li>• Acompañamiento en incidentes y auditorías.</li> </ul> <p class="mt-4 text-xs font-semibold text-emerald-300">
-Ideal para: organizaciones sin equipo interno de seguridad.
-</p> </article> <!-- Servicio 6 --> <article class="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">
-Programas de Concientización y Cultura DigitalMind
-</h3> <p class="mt-2 text-sm text-slate-300">
-Diseño de planes anuales de sensibilización, cápsulas formativas y
-          materiales para que la seguridad se vuelva parte del día a día.
-</p> <ul class="mt-3 space-y-1 text-xs text-slate-300"> <li>• Plan anual de contenidos.</li> <li>• Cápsulas, charlas y campañas.</li> <li>• Métricas y seguimiento de participación.</li> </ul> <p class="mt-4 text-xs font-semibold text-emerald-300">
-Ideal para: organizaciones que quieren sostener el cambio.
-</p> </article> </div> </div> </section> <section id="porque" class="relative overflow-hidden border-animado"> <div class="mx-auto max-w-6xl px-4 py-14 md:py-18"> <div class="mb-8 max-w-3xl"> <h2 class="text-xl font-semibold text-slate-50 sm:text-2xl">
-¿Por qué trabajar con DigitalMind?
-</h2> <p class="mt-2 text-sm text-slate-300">
-No somos un proveedor más de TI. Somos tu socio en ciberseguridad, con
-        foco en claridad, ejecución y acompañamiento.
-</p> </div> <div class="grid gap-6 md:grid-cols-3"> <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">Lenguaje de negocio</h3> <p class="mt-2 text-sm text-slate-300">
-Traducimos riesgos técnicos a impacto en continuidad, reputación y
-          cumplimiento, para que la gerencia tome decisiones informadas.
-</p> </div> <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">
-Acciones, no solo informes
-</h3> <p class="mt-2 text-sm text-slate-300">
-Entregamos planes claros, priorizados y realistas. Podemos acompañar
-          en la implementación junto a tu equipo.
-</p> </div> <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5"> <h3 class="text-sm font-semibold text-slate-50">
-Enfoque local y regulatorio
-</h3> <p class="mt-2 text-sm text-slate-300">
-Integramos buenas prácticas internacionales con el contexto
-          regulatorio chileno y las necesidades particulares de tu sector.
-</p> </div> </div> </div> <!-- CÓMO TRABAJAMOS --> <div class="mx-auto max-w-6xl px-4 py-14 md:py-18"> <div class="mb-8 max-w-3xl"> <h2 class="text-xl font-semibold text-slate-50 sm:text-2xl">
-Un método simple para un problema complejo
-</h2> <p class="mt-2 text-sm text-slate-300">
-Menos ruido, más foco: estructuramos la ciberseguridad en fases claras
-        que toda la organización puede entender.
-</p> </div> <div class="grid gap-4 md:grid-cols-5"> <!-- Paso 1 --> <div class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-4"> <span class="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/15 text-xs font-semibold text-emerald-300 ring-1 ring-emerald-500/40">
-1
-</span> <h3 class="text-xs font-semibold uppercase tracking-wide text-slate-200">
-Reunión inicial
-</h3> <p class="mt-2 text-xs text-slate-300">
-Entendemos el negocio, los datos críticos y las principales
-          preocupaciones.
-</p> </div> <!-- Paso 2 --> <div class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-4"> <span class="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/15 text-xs font-semibold text-emerald-300 ring-1 ring-emerald-500/40">
-2
-</span> <h3 class="text-xs font-semibold uppercase tracking-wide text-slate-200">
-Diagnóstico
-</h3> <p class="mt-2 text-xs text-slate-300">
-Realizamos un Diagnóstico Flash o Assessment integral según el nivel
-          de madurez.
-</p> </div> <!-- Paso 3 --> <div class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-4"> <span class="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/15 text-xs font-semibold text-emerald-300 ring-1 ring-emerald-500/40">
-3
-</span> <h3 class="text-xs font-semibold uppercase tracking-wide text-slate-200">
-Plan 90 días
-</h3> <p class="mt-2 text-xs text-slate-300">
-Definimos prioridades inmediatas, responsables y esfuerzos estimados.
-</p> </div> <!-- Paso 4 --> <div class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-4"> <span class="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/15 text-xs font-semibold text-emerald-300 ring-1 ring-emerald-500/40">
-4
-</span> <h3 class="text-xs font-semibold uppercase tracking-wide text-slate-200">
-Implementación
-</h3> <p class="mt-2 text-xs text-slate-300">
-Acompañamos a TI en proyectos clave: pentesting, políticas, controles
-          técnicos.
-</p> </div> <!-- Paso 5 --> <div class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-4"> <span class="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/15 text-xs font-semibold text-emerald-300 ring-1 ring-emerald-500/40">
-5
-</span> <h3 class="text-xs font-semibold uppercase tracking-wide text-slate-200">
-CISO Virtual
-</h3> <p class="mt-2 text-xs text-slate-300">
-Rol continuo de CISO Virtual: comité, roadmap vivo, indicadores y
-          mejora continua.
-</p> </div> </div> </div> </section> <!-- CONTACTO --><section id="contacto" class="bg-dmBg"> <div class="mx-auto max-w-6xl px-4 py-16"> <div class="grid gap-10 md:grid-cols-2"> <div> <h2 class="text-xl font-semibold text-slate-50 sm:text-2xl">
-Hablemos de la seguridad de tu organización
-</h2> <p class="mt-2 text-sm text-slate-300">
-Agenda una conversación inicial sin costo para entender tu contexto y
-          evaluar cómo podemos ayudarte con un Diagnóstico Flash, un Pentest o
-          un modelo de CISO Virtual.
-</p> <div class="mt-6 space-y-2 text-normal text-slate-300"> <p> <span class="font-semibold text-slate-100">Correo:</span> <a href="mailto:contacto@digitalmind.cl" class="hover:underline" target="_blank" rel="noopener noreferrer">
-contacto@digitalmind.cl
-</a> </p> <p> <span class="font-semibold text-slate-100">Teléfono:</span> <a href="tel:+56963943352" class="hover:underline">
-+56 9 6394 3352
-</a> </p> <p> <span class="font-semibold text-xs text-slate-400">Dale click a unos de los contactos para conversar con nosotros</span> </p> </div> </div> <!-- Formulario (no funcional, markup listo para backend) --> <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5 shadow-lg shadow-emerald-500/10"> <form class="space-y-4" action="https://formspree.io/f/mnjjvybo" method="POST"> <input type="hidden" name="_subject" value="Nuevo contacto desde web DigitalMind"> <input type="text" name="_gotcha" style="display:none"> <div> <label for="nombre" class="block text-xs font-medium text-slate-200">
-Nombre y apellido
-</label> <input id="nombre" name="nombre" type="text" required class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950/80 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500" placeholder="Ej: María Pérez"> </div> <div> <label for="email" class="block text-xs font-medium text-slate-200">
-Correo electrónico
-</label> <input id="email" name="email" type="email" required class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950/80 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500" placeholder="correo@empresa.cl"> </div> <div> <label for="empresa" class="block text-xs font-medium text-slate-200">
-Empresa / Organización
-</label> <input id="empresa" name="empresa" type="text" class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950/80 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500" placeholder="Nombre de la organización"> </div> <div> <label for="mensaje" class="block text-xs font-medium text-slate-200">
-¿En qué podemos ayudarte?
-</label> <textarea id="mensaje" name="mensaje" rows="4" class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950/80 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500" placeholder="Cuéntanos brevemente tu situación..."></textarea> </div> <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-dmAccent px-6 py-2.5 text-sm font-semibold text-dmPrimary shadow-lg shadow-dmAccent/30 hover:bg-emerald-400 transition-colors">
-Enviar consulta
-</button> <p class="text-[11px] text-slate-500">
-Al enviar este formulario, nos autorizas a contactarte para
-            coordinar una reunión o solicitar más información.
-</p> </form> </div> </div> </div> </section> <!-- FOOTER --><footer class="border-t border-slate-800 bg-black/80"> <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-slate-500 md:flex-row"> <p>© <span id="year"></span> DigitalMind Consultores. Todos los derechos reservados.</p> <p class="text-[11px]">
-Ciberseguridad · Pentesting · vCISO · Concientización
-</p> <p><a href="#inicio">Volver al inicio</a></p> </div> </footer>  </body></html>
+            </p>
+            <ul class="mt-3 space-y-1 text-xs text-slate-300">
+              <li>Plan anual de contenidos.</li>
+              <li>Cápsulas, charlas y campañas.</li>
+              <li>Métricas y seguimiento de participación.</li>
+            </ul>
+            <p class="mt-4 text-xs font-semibold text-emerald-300">
+              Ideal para: organizaciones que quieren sostener el cambio.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="porque" class="relative overflow-hidden border-animado">
+      <div class="mx-auto max-w-6xl px-4 py-14 md:py-18">
+        <div class="mb-8 max-w-3xl">
+          <h2 class="text-xl font-semibold text-slate-50 sm:text-2xl">
+            ¿Por qué trabajar con DigitalMind?
+          </h2>
+          <p class="mt-2 text-sm text-slate-300">
+            No somos un proveedor más de TI. Somos tu socio en ciberseguridad,
+            con foco en claridad, ejecución y acompañamiento.
+          </p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+            <h3 class="text-sm font-semibold text-slate-50">
+              Lenguaje de negocio
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Traducimos riesgos técnicos a impacto en continuidad, reputación y
+              cumplimiento, para que la gerencia tome decisiones informadas.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+            <h3 class="text-sm font-semibold text-slate-50">
+              Acciones, no solo informes
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Entregamos planes claros, priorizados y realistas. Podemos
+              acompañar en la implementación junto a tu equipo.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5">
+            <h3 class="text-sm font-semibold text-slate-50">
+              Enfoque local y regulatorio
+            </h3>
+            <p class="mt-2 text-sm text-slate-300">
+              Integramos buenas prácticas internacionales con el contexto
+              regulatorio chileno y las necesidades particulares de tu sector.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mx-auto max-w-6xl px-4 py-14 md:py-18">
+        <div class="mb-8 max-w-3xl">
+          <h2 class="text-xl font-semibold text-slate-50 sm:text-2xl">
+            Un método simple para un problema complejo
+          </h2>
+          <p class="mt-2 text-sm text-slate-300">
+            Menos ruido, más foco: estructuramos la ciberseguridad en fases
+            claras que toda la organización puede entender.
+          </p>
+        </div>
+        <div class="grid gap-4 md:grid-cols-5">
+          <div
+            class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-4"
+          >
+            <span
+              class="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/15 text-xs font-semibold text-emerald-300 ring-1 ring-emerald-500/40"
+              >1</span
+            >
+            <h3
+              class="text-xs font-semibold uppercase tracking-wide text-slate-200"
+            >
+              Reunión inicial
+            </h3>
+            <p class="mt-2 text-xs text-slate-300">
+              Entendemos el negocio, los datos críticos y las principales
+              preocupaciones.
+            </p>
+          </div>
+          <div
+            class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-4"
+          >
+            <span
+              class="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/15 text-xs font-semibold text-emerald-300 ring-1 ring-emerald-500/40"
+              >2</span
+            >
+            <h3
+              class="text-xs font-semibold uppercase tracking-wide text-slate-200"
+            >
+              Diagnóstico
+            </h3>
+            <p class="mt-2 text-xs text-slate-300">
+              Realizamos un Diagnóstico Flash o Assessment integral según el
+              nivel de madurez.
+            </p>
+          </div>
+          <div
+            class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-4"
+          >
+            <span
+              class="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/15 text-xs font-semibold text-emerald-300 ring-1 ring-emerald-500/40"
+              >3</span
+            >
+            <h3
+              class="text-xs font-semibold uppercase tracking-wide text-slate-200"
+            >
+              Plan 90 días
+            </h3>
+            <p class="mt-2 text-xs text-slate-300">
+              Definimos prioridades inmediatas, responsables y esfuerzos
+              estimados.
+            </p>
+          </div>
+          <div
+            class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-4"
+          >
+            <span
+              class="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/15 text-xs font-semibold text-emerald-300 ring-1 ring-emerald-500/40"
+              >4</span
+            >
+            <h3
+              class="text-xs font-semibold uppercase tracking-wide text-slate-200"
+            >
+              Implementación
+            </h3>
+            <p class="mt-2 text-xs text-slate-300">
+              Acompañamos a TI en proyectos clave: pentesting, políticas,
+              controles técnicos.
+            </p>
+          </div>
+          <div
+            class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/60 p-4"
+          >
+            <span
+              class="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-500/15 text-xs font-semibold text-emerald-300 ring-1 ring-emerald-500/40"
+              >5</span
+            >
+            <h3
+              class="text-xs font-semibold uppercase tracking-wide text-slate-200"
+            >
+              CISO Virtual
+            </h3>
+            <p class="mt-2 text-xs text-slate-300">
+              Rol continuo de CISO Virtual: comité, roadmap vivo, indicadores y
+              mejora continua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="bg-dmBg">
+      <div class="mx-auto max-w-6xl px-4 py-16">
+        <div class="grid gap-10 md:grid-cols-2">
+          <div>
+            <h2 class="text-xl font-semibold text-slate-50 sm:text-2xl">
+              Hablemos de la seguridad de tu organización
+            </h2>
+            <p class="mt-2 text-sm text-slate-300">
+              Agenda una conversación inicial sin costo para entender tu
+              contexto y evaluar cómo podemos ayudarte con un Diagnóstico Flash,
+              un Pentest o un modelo de CISO Virtual.
+            </p>
+            <div class="mt-6 space-y-2 text-normal text-slate-300">
+              <p>
+                <span class="font-semibold text-slate-100">Correo:</span>
+                <a
+                  href="mailto:contacto@digitalmind.cl"
+                  class="hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >contacto@digitalmind.cl</a
+                >
+              </p>
+              <p>
+                <span class="font-semibold text-slate-100">Teléfono:</span>
+                <a href="tel:+56963943352" class="hover:underline"
+                  >+56 9 6394 3352</a
+                >
+              </p>
+              <p>
+                <span class="font-semibold text-xs text-slate-400"
+                  >Dale click a unos de los contactos para conversar con
+                  nosotros</span
+                >
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5 shadow-lg shadow-emerald-500/10"
+          >
+            <!-- Formulario seguro con Token Anti-CSRF inyectado -->
+            <form
+              id="secure-form"
+              class="space-y-4"
+              action="https://formspree.io/f/mnjjvybo"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Nuevo contacto desde web DigitalMind"
+              />
+              <input type="text" name="_gotcha" style="display: none" />
+              <!-- Token Anti-CSRF Simulado -->
+              <input
+                type="hidden"
+                name="csrf-token"
+                value="e4d909c290d0fb1ca068ffaddf22cbd0"
+              />
+
+              <div>
+                <label
+                  for="nombre"
+                  class="block text-xs font-medium text-slate-200"
+                  >Nombre y apellido</label
+                >
+                <input
+                  id="nombre"
+                  name="nombre"
+                  type="text"
+                  required
+                  class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950/80 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                  placeholder="Ej: María Pérez"
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-xs font-medium text-slate-200"
+                  >Correo electrónico</label
+                >
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950/80 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                  placeholder="correo@empresa.cl"
+                />
+              </div>
+              <div>
+                <label
+                  for="empresa"
+                  class="block text-xs font-medium text-slate-200"
+                  >Empresa / Organización</label
+                >
+                <input
+                  id="empresa"
+                  name="empresa"
+                  type="text"
+                  class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950/80 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                  placeholder="Nombre de la organización"
+                />
+              </div>
+              <div>
+                <label
+                  for="mensaje"
+                  class="block text-xs font-medium text-slate-200"
+                  >¿En qué podemos ayudarte?</label
+                >
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  rows="4"
+                  class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950/80 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+                  placeholder="Cuéntanos brevemente tu situación..."
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="inline-flex w-full items-center justify-center rounded-full bg-dmAccent px-6 py-2.5 text-sm font-semibold text-dmPrimary shadow-lg shadow-dmAccent/30 hover:bg-emerald-400 transition-colors"
+              >
+                Enviar consulta
+              </button>
+              <p class="text-[11px] text-slate-500">
+                Al enviar este formulario, nos autorizas a contactarte para
+                coordinar una reunión o solicitar más información.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="border-t border-slate-800 bg-black/80">
+      <div
+        class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-slate-500 md:flex-row"
+      >
+        <p>
+          © <span id="year"></span> DigitalMind Consultores. Todos los derechos
+          reservados.
+        </p>
+        <p class="text-[11px]">
+          Ciberseguridad · Pentesting · vCISO · Concientización
+        </p>
+        <p><a href="#inicio">Volver al inicio</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
