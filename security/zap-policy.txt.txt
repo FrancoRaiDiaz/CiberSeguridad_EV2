@@ -1,0 +1,4 @@
+OWASP ZAP - Política de escaneo para DigitalMind (Local)
+Perfil: Standard DAST (Active & Passive Scan)
+Objetivo: 127.0.0.1:8000
+Foco: Verificación de cabeceras HTTP restrictivas (CSP, X-Frame-Options) y validación de tokens Anti-CSRF en formularios.
